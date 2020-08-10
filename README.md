@@ -1,6 +1,6 @@
 
 # Containerize your first dotnet core application
-This application will demonstarte how to containerize a dot net core web application using docker
+This application is to demonstarte how to containerize a dot net core web application using docker
 
 # What and Why Containers- 
 
@@ -19,7 +19,7 @@ There are multiple vendor available which provide containers and Docker is the m
     2.	Create a file in the project root directory “Dockerfile”.If you are using visual studio you can right click on the project and Add new item and add Docker support. It          will automatically create a docker file for you.
 
 
-   3.	Dockerfile contain all the dependencies and information to run the application. Below the content of docker file 
+    3.	Dockerfile contain all the dependencies and information to run the application. Below the content of docker file 
 
               #This is base image of dotnet core application which is created by Microsoft.
               FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
@@ -41,8 +41,8 @@ There are multiple vendor available which provide containers and Docker is the m
 
   4.	Build image and run container – 
 
-      a.	Command to create an image  - container app is name of image and . is for docker file directory location , in this case It is same directory.  This command will              pull all th e required images  mentioned in docker file
-         <b> “docker build -t containerapp . ”/<b>
+      a.	Command to create an image  - container app is name of image and . is for docker file directory location , in this case It is same directory.  This command will                pull all th e required images  mentioned in docker file
+            <b> “docker build -t containerapp . ”/<b>
       b.	After successful execution of above command you can check your image by using command <b> “docker images”</b> It will list all the docker images.
       c.	Once the image is successfully created , You can run container by following command 
        “docker run -d -p 4300:80 --name demo_container  containerapp”
