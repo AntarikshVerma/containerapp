@@ -14,7 +14,7 @@ There are multiple vendor available which provide containers and Docker is the m
 
     1.	Create a web  application  named “containerapp” using below command 
 
-    <b> “dotnet new webapp -o containerapp”</b>
+         “dotnet new webapp -o containerapp”
 
     2.	Create a file in the project root directory “Dockerfile”.If you are using visual studio you can right click on the project and Add new item and add Docker support. It          will automatically create a docker file for you.
 
@@ -41,22 +41,22 @@ There are multiple vendor available which provide containers and Docker is the m
 
   4.	Build image and run container – 
 
-      a.	Command to create an image  - container app is name of image and . is for docker file directory location , in this case It is same directory.  This command will                pull all th e required images  mentioned in docker file
+      a. Command to create an image  - container app is name of image and . is for docker file directory location , in this case It is same directory.  This command will                 pull all th e required images  mentioned in docker file
             <b> “docker build -t containerapp . ”/<b>
-      b.	After successful execution of above command you can check your image by using command <b> “docker images”</b> It will list all the docker images.
-      c.	Once the image is successfully created , You can run container by following command 
-       “docker run -d -p 4300:80 --name demo_container  containerapp”
+      b. After successful execution of above command you can check your image by using command <b> “docker images”</b> It will list all the docker images.
+      c. Once the image is successfully created , You can run container by following command 
+            “docker run -d -p 4300:80 --name demo_container  containerapp”
           •	-d means to run the container in background
           •	-p means map  the container port like external port: internal port
           •	--name is the container i.e. demo_container
           •	Last argument is image name
 
-      d.	“docker ps” command is used to list out all running containers. 
+      d. “docker ps” command is used to list out all running containers. 
 
-  5.	If you want to stop or remove your containers and remove images , Below are the commands to do that
-          a.	“docker stop containername” – stop container 
-          b.	“docker rm containername” – remove container
-          c.	“docker rmi imagename” –remove image
+  5. If you want to stop or remove your containers and remove images, Below are the commands to do that
+        a.	“docker stop containername” – stop container 
+        b.	“docker rm containername” – remove container
+        c.	“docker rmi imagename” –remove image
 
  
 
