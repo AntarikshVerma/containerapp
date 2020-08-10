@@ -53,10 +53,10 @@ There are multiple vendor available which provide containers and Docker is the m
 
       d. “docker ps” command is used to list out all running containers. 
 
-  5. If you want to stop or remove your containers and remove images, Below are the commands to do that
-        a.	“docker stop containername” – stop container 
-        b.	“docker rm containername” – remove container
-        c.	“docker rmi imagename” –remove image
+  5. If you want to stop or remove your containers and remove images, Below are the commands to do that <br>
+        a.	“docker stop containername” – stop container  <br>
+        b.	“docker rm containername” – remove container <br>
+        c.	“docker rmi imagename” –remove image <br>
 
  
 
