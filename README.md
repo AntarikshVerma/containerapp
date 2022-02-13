@@ -1,6 +1,6 @@
 
 # Containerize your first dotnet core application
-This application is to demonstarte how to containerize a dot net core web application using docker
+This application is to demonstrate how to containerize a dot net core web application using docker
 
 # What and Why Containers- 
 
